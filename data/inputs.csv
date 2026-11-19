@@ -1,0 +1,21 @@
+id,group,parameter,unit,low,base,high,basis,source,url
+m0,isotherm,GAB monolayer moisture (MPC80 at 25 C),kg water per kg dry matter,0.0563,0.0563,0.0563,sourced,"Vasiljevic, Toebes and Huppertz (2021), Int. Dairy J. 119:105062, Table 1 (milk protein concentrate MPC80, 25 C)",https://doi.org/10.1016/j.idairyj.2021.105062
+C,isotherm,GAB C constant (MPC80),-,14.9,14.9,14.9,sourced,"Vasiljevic et al. (2021), Table 1",https://doi.org/10.1016/j.idairyj.2021.105062
+K,isotherm,GAB K constant (MPC80),-,0.881,0.881,0.881,sourced,"Vasiljevic et al. (2021), Table 1",https://doi.org/10.1016/j.idairyj.2021.105062
+aw_i,product,Water activity at packing,-,0.15,0.20,0.25,mixed,"Base: dairy powders should be close to aw 0.2 at 25 C for optimal preservation (Schuck et al., Dairy Sci. Technol. 2010); low/high assumed",https://hal.archives-ouvertes.fr/hal-00895652/file/hal-00895652.pdf
+aw_c,product,Critical water activity (caking and lactose crystallisation),-,0.35,0.40,0.55,mixed,"Lactose crystallised above aw 0.35 (amorphous lactose) and 0.55 (skim milk powder) at 25 C (Vasiljevic et al. 2021); base 0.40 assumed for a lactose-containing protein mix",https://core.ac.uk/download/511367892.pdf
+mass,pack,Product per pack,g,500,500,500,assumption,"A 500 g nutrition-powder pouch",
+solids,pack,Dry-matter fraction,fraction,0.96,0.96,0.96,assumption,"About 4% moisture, the skim milk powder specification cited by Schuck et al. (2010)",https://hal.archives-ouvertes.fr/hal-00895652/file/hal-00895652.pdf
+area,pack,Pouch surface area,m2,0.07,0.09,0.11,assumption,"Stand-up pouch of about 180 x 260 mm, both faces plus gusset",
+wvtr_foil,film,PET12/Al12/LDPE75 laminate WVTR at 38 C/90% RH,g per m2 per day,0.05,0.10,0.20,mixed,"Base: datasheet value <= 0.10 g/m2/24h (LLFA topdry AL+PE 12-12-75); low assumed; high assumed for flex cracks and seal paths",https://llfa.de/mwdownloads/download/link/id/631
+wvtr_alox,film,AlOx-PET12/PE50 laminate WVTR at 38 C/90% RH,g per m2 per day,0.40,0.70,1.00,mixed,"Base: datasheet value < 0.7 g/m2/24h (SRF AlOx PETLAR); low and high assumed",https://www.srf.com/wp-content/uploads/2024/05/AlOx-Coated-PETLAR.pdf
+wvtr_met,film,Metallised film laminate WVTR at 38 C/90% RH,g per m2 per day,0.50,1.00,2.00,mixed,"Base: metallised food packaging sheet should be around 1 g/m2/day at 38 C/90% RH (patent CA 3148940 background); low and high assumed",https://brevets-patents.ic.gc.ca/opic-cipo/cpd/eng/patent/3148940/summary.html
+wvtr_bopp,film,BOPP/PE laminate (no metal) WVTR at 38 C/90% RH,g per m2 per day,3.9,5.0,6.2,mixed,"BOPP 25 um normalised range 3.9-6.2 g/m2/24h (Packaging Warehouse adviser); base is the midpoint",https://www.packaging-warehouse.com/en/adviser/wvtr-water-vapour-barrier-364
+T_iva,zone,Zone IVa long-term temperature,C,30,30,30,sourced,"ICH/WHO climatic zone IVa: 30 C/65% RH",https://www.pharmaguideline.com/2010/12/different-climatic-zones-for-stability.html?m=1
+RH_iva,zone,Zone IVa long-term relative humidity,fraction,0.65,0.65,0.65,sourced,"ICH/WHO climatic zone IVa: 30 C/65% RH",https://www.pharmaguideline.com/2010/12/different-climatic-zones-for-stability.html?m=1
+T_ivb,zone,Zone IVb long-term temperature,C,30,30,30,sourced,"ICH/WHO climatic zone IVb: 30 C/75% RH",https://www.pharmaguideline.com/2010/12/different-climatic-zones-for-stability.html?m=1
+RH_ivb,zone,Zone IVb long-term relative humidity,fraction,0.75,0.75,0.75,sourced,"ICH/WHO climatic zone IVb: 30 C/75% RH",https://www.pharmaguideline.com/2010/12/different-climatic-zones-for-stability.html?m=1
+T_acc,zone,Accelerated test temperature,C,40,40,40,sourced,"ICH accelerated condition 40 C/75% RH for 6 months",https://www.pharmaguideline.com/2010/12/different-climatic-zones-for-stability.html?m=1
+RH_acc,zone,Accelerated test relative humidity,fraction,0.75,0.75,0.75,sourced,"ICH accelerated condition 40 C/75% RH",https://www.pharmaguideline.com/2010/12/different-climatic-zones-for-stability.html?m=1
+Ea_vitc,kinetics,Activation energy of vitamin C loss,kJ per mol,84.1,84.1,84.1,sourced,"20.11 kcal/mol, first-order Arrhenius kinetics, ascorbic acid in fruit-based infant foods (J. Food Eng.)",https://core.ac.uk/download/71020807.pdf
+target,pack,Shelf-life target,months,18,18,18,assumption,"Target used to compare packs",
